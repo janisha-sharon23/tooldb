@@ -1,0 +1,1840 @@
+/* Default code Starts here */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    color: #898989;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f0f8ff;
+    /* font-family: "Nunito", sans-serif; */
+    font-family: "Lato", sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    /* text-wrap: balance; */
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #660600;
+    --darkColor: #1b1b1b;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffPrimary: "Nunito", sans-serif;
+    --ffSecondary: "Merienda", cursive;
+    --fontcolor: #898989;
+    ---headerbg: #f2f2f2;
+    --darkgrey: #445383;
+    --btnbackground-color: #bf1e2d;
+    --hfont-family: "Roboto", sans-serif;
+    --b2background-color: #f9fbfd;
+    --greybg: #9c9c9c;
+    --lgreyclr: #909aaf;
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+.componentNav {
+    padding: 1.5rem 0;
+}
+
+.componentSpacing {
+    padding: 5.8rem 3rem;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dflexr {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+}
+
+.dflexl {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.dflexcoll {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.dflexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* text-align: center; */
+
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gridcl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1.5fr;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid131 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.grid13 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* project standard classes ends */
+/* header code starts here_____________________________________ */
+/* navBar codes------------------------------------ */
+header {
+    background-color: var(---headerbg);
+    /* position: relative; */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fa-whatsapp {
+    font-size: 4rem;
+    background-color: rgb(15, 227, 0);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 4.4rem;
+    left: 3rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+}
+
+.navContainer {
+    /* background-color:var(---headerbg) */
+    /* position: sticky; */
+}
+
+/* ----------------------------------responsiv nav--------- */
+label #btn,
+label #cancel {
+    color: var(--btnbackground-color);
+    font-size: 2rem;
+    /* float: right; */
+    /* line-height: 8rem; */
+    /* margin-top: 6rem; */
+    /* margin-right: 2rem; */
+    display: none;
+    position: absolute;
+    top: 1.4rem;
+}
+
+
+
+#check,
+#check1 {
+    display: none;
+}
+
+/* ----------------------------------responsiv nav--------- */
+
+.navBar {
+    /* background-color: #be9c79; */
+    position: relative;
+}
+
+.navBody {
+    /* background-color: #be9c79; */
+}
+
+.navlogo {
+    /* background-color: #be9c79; */
+}
+
+.navlogo img {
+    /* background-color: #be9c79; */
+    height: 4.59rem;
+    width: auto;
+}
+
+.navList {
+    /* background-color: #be9c79; */
+    margin-left: 8rem;
+}
+
+.navList li {
+    /* background-color: #be9c79; */
+    list-style-type: none;
+    margin: 1.5rem;
+
+}
+
+.navList li a {
+    text-decoration: none;
+    font-size: 1.28rem;
+    color: var(--darkgrey);
+    font-weight: 600;
+}
+
+.navBtn {
+    /* background-color: #be9c79; */
+}
+
+.navBtn button {
+    background-color: var(--btnbackground-color);
+    padding: 1.2rem 2.4rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.navBtn button a {
+    /* background-color: #be9c79; */
+    text-decoration: none;
+    color: var(--lightColor);
+    font-size: 1.28rem;
+    font-weight: 700;
+}
+
+/* navBar codes------------------------------------ */
+/* heroSection codes------------------------------------ */
+
+.herocontainer {
+    /* background-color: #be9c79; */
+}
+
+.herocontainer {
+    /* background-color: #be9c79; */
+}
+
+.heroBody {
+    /* background-color: #be9c79; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 6.5rem;
+}
+
+.heroText {
+    /* background-color: #be9c79; */
+}
+
+.heroHeading {
+    /* background-color: #be9c79; */
+}
+
+.heroHeading h1 {
+    /* background-color: #be9c79; */
+    color: var(--btnbackground-color);
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: var(--hfont-family);
+    line-height: 4.8rem;
+    text-align: center;
+}
+
+.heroList {
+    /* background-color: #be9c79; */
+    margin: 4rem 0 0;
+}
+
+.hlist {
+    /* background-color: #be9c79; */
+    list-style-type: none;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+
+}
+
+.list1 {
+    margin-right: 15rem;
+}
+
+.hlist li {
+    /* background-color: #be9c79; */
+    /* margin-left: 5rem; */
+    margin-bottom: 0.38rem;
+}
+
+.hlist li i {
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: var(--btnbackground-color);
+}
+
+.heroBtns {
+    /* background-color: #be9c79; */
+}
+
+.heroBtns button {
+    /* background-color: #be9c79; */
+
+    padding: 1.4rem 2.5rem;
+    border-radius: 2.5rem;
+    margin: 2rem;
+}
+
+.heroBtns button a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.btn1 {
+    /* background-color: #be9c79; */
+    background-color: var(--btnbackground-color);
+    border: none;
+}
+
+.btn1 a {
+    /* background-color: #be9c79; */
+    color: var(--lightColor);
+}
+
+.btn2 {
+    background-color: transparent;
+    border-color: var(--btnbackground-color);
+}
+
+.btn2 a {
+    /* background-color: #be9c79; */
+    color: var(--btnbackground-color);
+}
+
+.heroImage {
+    /* background-color: #be9c79; */
+    width: 100%;
+    aspect-ratio: 16/9;
+
+
+
+}
+
+.heroImage img {
+    /* background-color: #be9c79; */
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* heroSection codes------------------------------------ */
+/* header code ends here_____________________________________ */
+/* main code starts here_____________________________________ */
+
+/* bill codes------------------------------------ */
+
+.billContainer {
+    background-color: var(--b2background-color);
+}
+
+.bill {
+    /* background-color: #be9c79; */
+}
+
+.billBody {
+    /* background-color: #be9c79; */
+}
+
+.image {
+    /* background-color: #be9c79; */
+
+    width: 80%;
+    aspect-ratio: 1/1;
+    /* padding-left: 11rem; */
+}
+
+.image img {
+    /* background-color: #be9c79; */
+    /* padding: 2.5rem; */
+    width: 70%;
+    aspect-ratio: 1/1;
+}
+
+.textJumbotron {
+    /* background-color: #be9c79; */
+}
+
+.textJumbotron h2 {
+    /* background-color: #be9c79; */
+    color: var(--darkColor);
+    font-size: 2.4rem;
+    font-family: var(--hfont-family);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.textJumbotron p {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    margin: 1.4rem 0rem;
+}
+
+.textJumbotron p span {
+    color: var(--btnbackground-color);
+}
+
+.textJumbotron button {
+    background-color: var(--btnbackground-color);
+    padding: 1.2rem 2.5rem;
+    border-radius: 2.5rem;
+    margin: 2rem;
+    /* padding: 0.8rem 3.2rem; */
+    border: none;
+
+
+
+}
+
+.textJumbotron button a {
+    color: var(--lightColor);
+    font-weight: 700;
+    font-size: 1.36rem;
+}
+
+/* bill codes------------------------------------ */
+
+/* invoice codes------------------------------------ */
+.invoiceContainer {
+    background-color: var(--lightColor);
+}
+
+.invoice {
+    /* background-color: #be9c79; */
+}
+
+.invoiceBody {
+    /* background-color: #be9c79; */
+}
+
+.erpContainer {
+    background-color: var(--b2background-color);
+}
+
+.erp {
+    /* background-color: #be9c79; */
+}
+
+.erpBody {
+    /* background-color: #be9c79; */
+}
+
+
+/* invoice codes------------------------------------ */
+
+/* crm codes------------------------------------ */
+
+.crmContainer {
+    background-color: var(--lightColor);
+}
+
+.crm {
+    /* background-color: #be9c79; */
+}
+
+.crmBody {
+    /* background-color: #be9c79; */
+}
+
+/* .textJumbotron */
+/* crm codes------------------------------------ */
+/* ulclient codes------------------------------------ */
+
+.ulClientContainer {
+    background-color: var(--b2background-color);
+}
+
+.ulClient {
+    /* background-color: #be9c79; */
+}
+
+.ulClientBody {
+    /* background-color: #be9c79; */
+}
+
+/* ulclient codes------------------------------------ */
+/* invoice maker codes------------------------------------ */
+
+.invoiceMakerContainer {
+    background-color: var(--lightColor);
+}
+
+.invoiceMaker {
+    /* background-color: #be9c79; */
+}
+
+.invoiceMakerBody {
+    /* background-color: #be9c79; */
+}
+
+/* invoice maker codes------------------------------------ */
+/* quotationManagement codes------------------------------------ */
+
+
+.quotationManagementContainer {
+    background-color: var(--b2background-color);
+}
+
+.quotationManagement {
+    /* background-color: #be9c79; */
+}
+
+.quotationManagementBody {
+    /* background-color: #be9c79; */
+}
+
+/* quotationManagement codes------------------------------------ */
+/* Inventory codes------------------------------------ */
+
+.inventoryContainer {
+    background-color: var(--lightColor);
+}
+
+.inventory {
+    /* background-color: #be9c79; */
+}
+
+.inventoryBody {
+    /* background-color: #be9c79; */
+}
+
+/* Inventory codes------------------------------------ */
+
+/* faq codes------------------------------------ */
+
+.faqContainer {
+    background-color: var(--b2background-color);
+}
+
+.faq {
+    /* background-color: #be9c79; */
+}
+
+.faqBody {
+    /* background-color: #be9c79; */
+}
+
+/* .image
+ */
+
+
+.faqText {
+    /* background-color: #be9c79; */
+    align-items: flex-start;
+}
+
+.faqHead {
+    /* background-color: #be9c79; */
+}
+
+.faqHead h2 {
+    /* background-color: #be9c79; */
+    color: var(--darkColor);
+    font-size: 2.4rem;
+    font-family: var(--hfont-family);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+
+}
+
+.faqList {
+    /* background-color: #be9c79; */
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.faqList li {
+    /* background-color: #be9c79; */
+    margin: 1.25rem 0;
+    border: 0.001rem solid rgb(215, 215, 215);
+    padding: 1.5rem 2rem;
+    font-size: 1.57rem;
+    font-weight: 600;
+    color: #666666;
+    width: 100%;
+}
+
+.faqList li i {
+    /* background-color: #be9c79; */
+    color: var(--btnbackground-color);
+    font-weight: 1000;
+    margin-right: 0.5rem;
+}
+
+/* faq codes------------------------------------ */
+/* how codes------------------------------------ */
+
+.howContainer {
+    background-color: var(--lightColor);
+}
+
+.how {
+    /* background-color: #be9c79; */
+}
+
+.howBody {
+    /* background-color: #be9c79; */
+}
+
+.howHeadBody {
+    /* background-color: #be9c79; */
+}
+
+.howJumbotron {
+    /* background-color: #be9c79; */
+}
+
+.howJumbotron h2 {
+    /* background-color: #be9c79; */
+    color: var(--darkColor);
+    font-size: 2.4rem;
+    font-family: var(--hfont-family);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.howJumbotron p {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    margin: 1.4rem 0rem 5rem;
+    text-align: center;
+    width: 70%;
+
+}
+
+.howJumbotron p span {
+    color: var(--btnbackground-color);
+}
+
+.howBottomBody {
+    /* background-color: #be9c79; */
+}
+
+.howCard {
+    /* background-color: #be9c79; */
+    /* gap: 2rem; */
+}
+
+.howcardHead {
+    /* background-color: #be9c79; */
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: center; */
+
+}
+
+.howcardHead h4 {
+    background-color: var(--btnbackground-color);
+    font-size: 2.4rem;
+    font-family: var(--hfont-family);
+    color: var(--lightColor);
+    padding: 0rem 1.3rem;
+    border-radius: 50%;
+    margin: 0 1rem 10rem;
+}
+
+.howCardJumbotron {
+    /* background-color: #be9c79; */
+
+}
+
+.hcj2 {
+    margin-bottom: 2rem;
+}
+
+.howCardJumbotron h3 {
+    /* background-color: #be9c79; */
+    font-size: 2.4rem;
+    font-family: var(--hfont-family);
+    color: var(--darkColor);
+    font-weight: 600;
+}
+
+.howCardJumbotron p {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+/* how codes------------------------------------ */
+/* try codes------------------------------------ */
+
+
+
+.tryContainer {
+    background-color: var(--greybg);
+
+}
+
+.try {
+    /* background-color: #be9c79; */
+}
+
+.tryBody {
+    /* background-color: #be9c79; */
+}
+
+.tryJumbotron {
+    /* background-color: #be9c79; */
+}
+
+.tryJumbotron h3 {
+    /* background-color: #be9c79; */
+    font-size: 4rem;
+    color: var(--lightColor);
+    font-family: var(--hfont-family);
+}
+
+.tryJumbotron p {
+    /* background-color: #be9c79; */
+    color: var(--lightColor);
+    font-size: 1.6rem;
+    margin: 0rem 0 3rem;
+}
+
+.tryJumbotron button {
+    /* background-color: #be9c79; */
+    padding: 1.3rem 2.9rem;
+    border-radius: 2.5rem;
+    border: none;
+}
+
+
+.tryJumbotron button a {
+    color: var(--btnbackground-color);
+    font-weight: 900;
+    font-size: 1.36rem;
+}
+
+/* try codes------------------------------------ */
+/* ourClients codes------------------------------------ */
+
+
+.ourClientsContainer {
+    background-color: var(--lightColor);
+}
+
+.ourClients {
+    /* background-color: #be9c79; */
+}
+
+.ourClientsBody {
+    /* background-color: #be9c79; */
+}
+
+.clientHead {
+    /* background-color: #be9c79; */
+}
+
+.clientHead h2 {
+    /* background-color: #be9c79; */
+    color: var(--darkColor);
+    font-size: 2.4rem;
+    font-family: var(--hfont-family);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+}
+
+.clientListBody {
+    /* background-color: #be9c79; */
+    gap: 2.5rem;
+}
+
+.clientAdress {
+    /* background-color: #be9c79; */
+
+}
+
+.clientAdress h3 {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    font-family: var(--hfont-family);
+    color: var(--darkColor);
+    margin-bottom: 0.7rem;
+}
+
+.clientAdress p {
+    /* background-color: #be9c79; */
+    font-size: 1.5rem;
+    color: var(--lgreyclr);
+}
+
+/* ourClients codes------------------------------------ */
+/* y codes------------------------------------ */
+
+.whyContainer {
+    background-color: var(--b2background-color);
+}
+
+.why {
+    /* background-color: #be9c79; */
+}
+
+.whyBody {
+    /* background-color: #be9c79; */
+}
+
+.whyTextBody {
+    /* background-color: #be9c79; */
+}
+
+.whyJumbotron {
+    /* background-color: #be9c79; */
+}
+
+.whyJumbotron h2 {
+    /* background-color: #be9c79; */
+    color: var(--darkColor);
+    font-size: 2.4rem;
+    font-family: var(--hfont-family);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+}
+
+.whypara {
+    /* background-color: #be9c79; */
+}
+
+.whypara p {
+    /* background-color: #be9c79; */
+    text-align: center;
+    width: 72%;
+    font-size: 1.6rem;
+    color: var(--lgreyclr);
+}
+
+.whypara p b {
+    color: var(--fontcolor);
+}
+
+.ratings {
+    /* background-color: #be9c79; */
+}
+
+.starRating {
+    /* background-color: #be9c79; */
+}
+
+.starRating p {
+    /* background-color: #be9c79; */
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--lgreyclr);
+}
+
+.starIcons {
+    /* background-color: #be9c79; */
+
+}
+
+.starIcons i {
+    /* background-color: #be9c79; */
+    font-size: 1.4rem;
+    color: #ffa500;
+    margin-left: 0.3rem;
+}
+
+.ratings p {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    color: var(--lgreyclr);
+}
+
+.whyReasons {
+    /* background-color: #be9c79; */
+}
+
+.whyReasons p {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    color: var(--lgreyclr);
+}
+
+.whyReasons p a {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    color: var(--btnbackground-color);
+}
+
+.whyCardBody {
+    /* background-color: #be9c79; */
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.whyCard {
+    background-color: #ffffff;
+    padding: 2.5rem 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+
+
+}
+
+.whyImage {
+    /* background-color: #be9c79; */
+}
+
+.whyImage img {
+    /* background-color: #be9c79; */
+    width: 62%;
+    aspect-ratio: 1/1;
+}
+
+.ycardText {
+    /* background-color: #be9c79; */
+    margin-left: 1.5rem;
+}
+
+.ycardText h4 {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    font-family: var(--hfont-family);
+    color: var(--darkColor);
+
+}
+
+.ycardText p {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    color: var(--lgreyclr);
+}
+
+/* y codes------------------------------------ */
+/* main codes ends here________________________________________________________ */
+/* footer code starts here______________________________________________ */
+/*  newsletter codes------------------------------------ */
+
+.newsletterContainer {
+    background-color: var(--greybg);
+
+}
+
+.newsletter {
+    /* background-color:var(--greybg); */
+
+}
+
+.newsletterBody {
+    /* background-color: #be9c79; */
+}
+
+.newsLetterJumbotron {
+    /* background-color: #be9c79; */
+}
+
+.newsLetterJumbotron h2 {
+    /* background-color: #be9c79; */
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--lightColor);
+    font-family: var(--hfont-family);
+    letter-spacing: 0.1rem;
+}
+
+.newsLetterJumbotron p {
+    /* background-color: #be9c79; */
+    font-size: 1.6rem;
+    color: var(--lightColor);
+    margin: 2rem 0 2.5rem;
+}
+
+.newsLetterJumbotron form {
+    background-color: var(--lightColor);
+    justify-content: space-between;
+    width: 47%;
+    border-radius: 2rem;
+}
+
+.newsLetterJumbotron form input {
+    /* background-color: #be9c79; */
+    background-color: var(--lightColor);
+    border: none;
+    padding: 1.4rem 1.9rem;
+    font-size: 1.6rem;
+    border-radius: 4rem;
+
+}
+
+.newsLetterJumbotron form button {
+    /* background-color: #be9c79; */
+    border: none;
+    background-color: transparent;
+    margin-right: 2rem;
+    color: var(--btnbackground-color);
+    font-weight: 900;
+}
+
+/*  newsletter codes------------------------------------ */
+/*  contact codes------------------------------------ */
+
+.contactContainer {
+    background-color: var(--b2background-color);
+}
+
+.contact {
+    /* background-color: #be9c79; */
+}
+
+.contactBody {
+    /* background-color: #be9c79; */
+}
+
+.contactList {
+    /* background-color: #be9c79; */
+}
+
+.contactList li {
+    /* background-color: #be9c79; */
+    margin: 0.7rem;
+}
+
+.contactList li a {
+    /* background-color: #be9c79; */
+    color: var(--darkgrey);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.contactIcons {
+    /* background-color: #be9c79; */
+}
+
+.contactIcons li {
+    /* background-color: #be9c79; */
+    margin: 2rem 0.4rem;
+}
+
+.contactIcons li i {
+    /* background-color:var(--btnbackground-color); */
+    /* font-size: 2rem; */
+    /* padding: 1rem; */
+
+}
+
+.fa-facebook {
+    color: var(--btnbackground-color);
+    font-size: 2.89rem;
+}
+
+.fa-x-twitter,
+.fa-linkedin-in {
+    background-color: var(--btnbackground-color);
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--lightColor);
+}
+
+.contactIcons li a i {
+    /* color: var(--btnbackground-color); */
+}
+
+.contactBody p {
+    /* background-color: #be9c79; */
+    font-size: 1.25rem;
+}
+
+/*  contact codes------------------------------------ */
+/* footer code starts here______________________________________________ */
+
+
+/* --------------------------------------------media queries-------------------------- */
+@media(width<=576px) {
+
+    .gridcl,
+    .grid2,
+    .grid3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid131 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .align {
+
+        padding: 0 2rem;
+    }
+
+    .componentNav {
+        padding: 1rem 0;
+    }
+
+    .componentSpacing {
+        padding: 4rem 2rem;
+    }
+
+    .navBody {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navContainer {
+        background-color: var(--lightColor);
+    }
+
+    .navBar {}
+
+    .navlogo {
+        float: right;
+
+    }
+
+    label #btn {
+        display: block;
+    }
+
+    .navBar {
+        position: relative;
+    }
+
+    .navBody ul {
+        background-color: var(--lightColor);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* padding: 1rem 2rem 1rem 1rem; */
+        right: -190%;
+        top: 8rem;
+        margin-left: 0rem;
+
+    }
+
+    .navBody li {
+        display: block;
+        margin: 0.4rem;
+        background-color: var(--lightColor);
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem;
+    }
+
+    .navBody li a {
+        color: var(--darkgrey);
+    }
+
+    #check:checked~.navBody ul {
+        left: 0rem;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
+
+    .heroBody {
+        /* background-color: #be9c79; */
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+    }
+
+
+    .heroList {
+        flex-direction: column;
+    }
+
+    .navlogo img {
+        /* background-color: #be9c79; */
+        height: 3.3rem;
+        width: auto;
+    }
+
+    .navBtn button {
+
+        padding: 0.8rem 1.4rem;
+        border-radius: 2rem;
+        border: none;
+    }
+
+    .navBtn button a,
+    .starIcons i,.contactBody p {
+
+        font-size: 1.1rem;
+
+    }
+
+    .heroHeading h1 {
+        font-size: 4.42rem;
+
+    }
+
+
+    .howCardJumbotron p,
+    .ycardText {
+
+        margin: 0;
+    }
+    .heroList{
+        margin: 4rem 0 5rem 10rem;
+    }
+  
+
+    .hlist,
+    .textJumbotron p,
+    .tryJumbotron p,
+    .faqList li,
+    .howJumbotron p,
+    .howCardJumbotron p,
+    .clientAdress h3,
+    .clientAdress p,
+    .whypara p,
+    .starRating p,
+    .ratings p,
+    .whyReasons p,
+    .whyReasons p a,
+    .ycardText h4,
+    .ycardText p,
+    .newsLetterJumbotron p {
+        font-size: 1.36rem;
+    }
+
+    .whyReasons p,.tryJumbotron p,.newsLetterJumbotron p,.tryJumbotron h3 {
+        text-align: center;
+    }
+
+    .list1 {
+        margin-right: 1rem;
+        margin-bottom: 0rem;
+    }
+.clientListBody,.whyCardBody{
+    padding: 0 1rem;
+}
+    .heroBtns button,
+    .textJumbotron button,
+    .tryJumbotron button {
+        padding: 1rem 2rem;
+        margin: 0.8rem;
+    }
+
+    .heroBtns button a,
+    .textJumbotron button a,
+    .tryJumbotron button a,.contactList li a  {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .textJumbotron h2,
+    .faqHead h2,
+    .howJumbotron h2,
+    .howCardJumbotron h3,
+    .newsLetterJumbotron h2,
+    .whyJumbotron h2,
+    .clientHead h2 {
+        font-size: 2.1rem;
+    }
+.howCard{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+    .billBody,
+    .erpBody,
+    .ulClientBody,
+    .quotationManagementBody,
+    .faqBody {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .tryJumbotron h3 {
+        font-size: 3.2rem;
+    }
+
+    .whyCard {
+        padding: 1.5rem 1rem;
+        border-radius: 0.61rem;
+    }
+
+    .whyImage img {
+
+        width: 35%;
+        aspect-ratio: 1/1;
+    }
+    .newsLetterJumbotron form {
+        width: 87%;
+    }
+    .newsLetterJumbotron form input {
+       padding: 1rem 1.5rem;
+        font-size: 1.36rem;
+    
+    }
+.newsLetterJumbotron form button{
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.howcardHead h4{
+    margin: 0 1rem 4rem;
+    /* background-color: #eeeeee; */
+
+}
+.hcj2 {
+    margin-bottom: 0rem;
+}
+.howCard {
+    margin-bottom: 2.5rem;
+    /* background-color: #bf1e2d; */
+}
+.heroList{
+    align-items: flex-start;
+}
+.contactList{
+    flex-wrap: wrap;
+}
+}
+@media(width>=576.2px) and (width<=768px){
+   
+    .gridcl{
+        grid-template-columns: 1fr;
+    }
+    .grid3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid131 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .align {
+
+        padding: 0 2rem;
+    }
+
+    .componentNav {
+        padding: 1rem 0;
+    }
+
+    .componentSpacing {
+        padding: 4.5rem 3rem;
+    }
+
+    .navBody {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navContainer {
+        background-color: var(--lightColor);
+    }
+
+    .navBar {}
+
+    .navlogo {
+        float: right;
+
+    }
+
+    label #btn {
+        display: block;
+    }
+
+    .navBar {
+        position: relative;
+    }
+
+    .navBody ul {
+        background-color: var(--lightColor);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* padding: 1rem 2rem 1rem 1rem; */
+        right: -190%;
+        top: 8rem;
+        margin-left: 0rem;
+
+    }
+
+    .navBody li {
+        display: block;
+        margin: 0.4rem;
+        background-color: var(--lightColor);
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem;
+    }
+
+    .navBody li a {
+        color: var(--darkgrey);
+    }
+
+    #check:checked~.navBody ul {
+        left: 0rem;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
+
+    .heroBody {
+        /* background-color: #be9c79; */
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+    }
+
+
+    .heroList {
+        flex-direction: column;
+        margin: 4rem 0 5rem 15rem;
+        /* padding-left: 5rem; */
+    }
+
+    .navlogo img {
+        /* background-color: #be9c79; */
+        height: 3.3rem;
+        width: auto;
+    }
+
+    .navBtn button {
+
+        padding: 0.8rem 1.4rem;
+        border-radius: 2rem;
+        border: none;
+    }
+
+    .navBtn button a,
+    .starIcons i,.contactBody p {
+
+        font-size: 1.1rem;
+
+    }
+
+    .heroHeading h1 {
+        font-size: 4.3rem;
+
+    }
+
+    .image {
+       
+        width: 80%;
+        aspect-ratio: 0;
+        /* ------------------------------------------------------------------------------------------------????------------------------------? */
+     
+    }
+    .howCardJumbotron p,
+    .ycardText {
+
+        margin: 0;
+    }
+    .tryJumbotron p{
+        text-align: center;
+    }
+    .hlist,
+    .textJumbotron p,
+    .tryJumbotron p,
+    .faqList li,
+    .howJumbotron p,
+    .howCardJumbotron p,
+    .clientAdress h3,
+    .clientAdress p,
+    .whypara p,
+    .starRating p,
+    .ratings p,
+    .whyReasons p,
+    .whyReasons p a,
+    .ycardText h4,
+    .ycardText p,
+    .newsLetterJumbotron p {
+        font-size: 1.36rem;
+    }
+
+    .whyReasons p {
+        text-align: center;
+    }
+    .contactList{
+        flex-wrap: wrap;
+    }
+    .list1 {
+        margin-right: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .heroBtns button,
+    .textJumbotron button,
+    .tryJumbotron button {
+        padding: 1rem 2rem;
+        margin: 0.8rem;
+    }
+
+    .heroBtns button a,
+    .textJumbotron button a,
+    .tryJumbotron button a,.contactList li a  {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .textJumbotron h2,
+    .faqHead h2,
+    .howJumbotron h2,
+    .howCardJumbotron h3,
+    .newsLetterJumbotron h2,
+    .whyJumbotron h2,
+    .clientHead h2 {
+        font-size: 2.1rem;
+    }
+
+
+    .tryJumbotron h3 {
+        font-size: 3.2rem;
+        
+    }
+
+    .whyCard {
+        padding: 1.5rem 1rem;
+        border-radius: 0.61rem;
+    }
+
+    .whyImage img {
+
+        width: 35%;
+        aspect-ratio: 1/1;
+    }
+    .newsLetterJumbotron form {
+        width: 87%;
+    }
+    .newsLetterJumbotron form input {
+       padding: 1rem 1.5rem;
+        font-size: 1.36rem;
+       
+    }
+.newsLetterJumbotron form button{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.howcardHead h4{
+    margin: 0 1rem 9rem;
+}
+.howCard {
+    margin-bottom: 2.5rem;
+}
+.heroList{
+    align-items: flex-start;
+} 
+.clientAdress p{
+    width: 50%;
+}
+}
+@media(width>=768.2px) and (width<=992px){
+   
+    .gridcl{
+        grid-template-columns: 1fr;
+    }
+    .grid3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid131 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .align {
+
+        padding: 0 2rem;
+    }
+
+    .componentNav {
+        padding: 1rem 0;
+    }
+
+    .componentSpacing {
+        padding: 4.5rem 3rem;
+    }
+
+    .navBody {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navContainer {
+        background-color: var(--lightColor);
+    }
+
+    .navBar {}
+
+    .navlogo {
+        float: right;
+
+    }
+
+    label #btn {
+        display: block;
+    }
+
+    .navBar {
+        position: relative;
+    }
+
+    .navBody ul {
+        background-color: var(--lightColor);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* padding: 1rem 2rem 1rem 1rem; */
+        right: -190%;
+        top: 8rem;
+        margin-left: 0rem;
+
+    }
+
+    .navBody li {
+        display: block;
+        margin: 0.4rem;
+        background-color: var(--lightColor);
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem;
+    }
+
+    .navBody li a {
+        color: var(--darkgrey);
+    }
+
+    #check:checked~.navBody ul {
+        left: 0rem;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
+
+    .heroBody {
+        /* background-color: #be9c79; */
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+    }
+
+
+    .heroList {
+        flex-direction: column;
+        margin: 4rem 0 5rem 15rem;
+        /* padding-left: 5rem; */
+    }
+
+    .navlogo img {
+        /* background-color: #be9c79; */
+        height: 3.3rem;
+        width: auto;
+    }
+
+    .navBtn button {
+
+        padding: 0.8rem 1.4rem;
+        border-radius: 2rem;
+        border: none;
+    }
+
+    .navBtn button a,
+    .starIcons i,.contactBody p {
+
+        font-size: 1.1rem;
+
+    }
+
+    .heroHeading h1 {
+        font-size: 4.3rem;
+
+    }
+
+    .image {
+       
+        width: 80%;
+        aspect-ratio: 0;
+        /* ------------------------------------------------------------------------------------------------????------------------------------? */
+     
+    }
+    .howCardJumbotron p,
+    .ycardText {
+
+        margin: 0;
+    }
+    .tryJumbotron p{
+        text-align: center;
+    }
+    .hlist,
+    .textJumbotron p,
+    .tryJumbotron p,
+    .faqList li,
+    .howJumbotron p,
+    .howCardJumbotron p,
+    .clientAdress h3,
+    .clientAdress p,
+    .whypara p,
+    .starRating p,
+    .ratings p,
+    .whyReasons p,
+    .whyReasons p a,
+    .ycardText h4,
+    .ycardText p,
+    .newsLetterJumbotron p {
+        font-size: 1.36rem;
+    }
+
+    .whyReasons p {
+        text-align: center;
+    }
+    .contactList{
+        flex-wrap: wrap;
+    }
+    .list1 {
+        margin-right: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .heroBtns button,
+    .textJumbotron button,
+    .tryJumbotron button {
+        padding: 1rem 2rem;
+        margin: 0.8rem;
+    }
+
+    .heroBtns button a,
+    .textJumbotron button a,
+    .tryJumbotron button a,.contactList li a  {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .textJumbotron h2,
+    .faqHead h2,
+    .howJumbotron h2,
+    .howCardJumbotron h3,
+    .newsLetterJumbotron h2,
+    .whyJumbotron h2,
+    .clientHead h2 {
+        font-size: 2.1rem;
+    }
+
+
+    .tryJumbotron h3 {
+        font-size: 3.2rem;
+        
+    }
+
+    .whyCard {
+        padding: 1.5rem 1rem;
+        border-radius: 0.61rem;
+    }
+
+    .whyImage img {
+
+        width: 35%;
+        aspect-ratio: 1/1;
+    }
+    .newsLetterJumbotron form {
+        width: 87%;
+    }
+    .newsLetterJumbotron form input {
+       padding: 1rem 1.5rem;
+        font-size: 1.36rem;
+       
+    }
+.newsLetterJumbotron form button{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.howcardHead h4{
+    margin: 0 1rem 9rem;
+}
+.howCard {
+    margin-bottom: 2.5rem;
+}
+.heroList{
+    align-items: flex-start;
+} 
+.clientAdress p{
+    width: 50%;
+}
+}
